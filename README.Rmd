@@ -1,7 +1,3 @@
----
-output: github_document
----
-
 # tsfactors
 
 **tsfactors** es un package R que permite agregar factores a dataframes con series de tiempo.
