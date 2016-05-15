@@ -1,15 +1,12 @@
-#' Agrega día de la semana a dataframe a partir de una fecha posix
+#' Entrega día de la semana a partir de una fecha posix
 #'
-#' Esta función agrega una nueva columna con los días de la semana a un dataframe
-#' @param df Dataframe al que agregar la nueva columna
-#' @param fecha Columna con fechas en formato POSIXt
+#' Esta función entrega el día de la semana en el formato indicado
+#' @param date Fecha en formato POSIXt
+#' @param days Formato y orden para días de la semana
 #' @keywords dow 
 #' @export
-#' @return Dataframe con columna DOW
-dow <- function(df, fecha){
-	days = c('lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo')
-	df$DOW <- factor(weekdays.POSIXt(fecha), levels = days)
-	return(df)
+#' @return dia de la semana como factor
+dow <- function(date, days = c('lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo')
+){
+	return(factor(weekdays.POSIXt(date), levels = days))
 }
-
-
