@@ -4,6 +4,8 @@
 #' @param df Dataframe al que agregar la nueva columna
 #' @param fecha Columna con fechas en formato POSIXt
 #' @keywords dow 
+#' @export
+#' @return Dataframe con columna DOW
 dow <- function(df, fecha){
 	days = c('lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo')
 	df$DOW <- factor(weekdays.POSIXt(fecha), levels = days)

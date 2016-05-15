@@ -11,6 +11,9 @@ dow(df, fecha)
 
 \item{fecha}{Columna con fechas en formato POSIXt}
 }
+\value{
+Dataframe con columna DOW
+}
 \description{
 Esta función agrega una nueva columna con los días de la semana a un dataframe
 }
