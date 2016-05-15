@@ -4,13 +4,16 @@
 \alias{dow}
 \title{Entrega día de la semana a partir de una fecha posix}
 \usage{
-dow(date, days = c("lunes", "martes", "miércoles", "jueves", "viernes",
-  "sábado", "domingo"))
+dow(date, days = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+  "Saturday", "Sunday"), daylabels = c("lunes", "martes", "miércoles",
+  "jueves", "viernes", "sabado", "domingo"))
 }
 \arguments{
 \item{date}{Fecha en formato POSIXt}
 
-\item{days}{Formato y orden para días de la semana}
+\item{days}{Orden para días de la semana}
+
+\item{daylabels}{Formato para días de la semana}
 }
 \value{
 dia de la semana como factor
