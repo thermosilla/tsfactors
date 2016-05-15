@@ -12,15 +12,10 @@ y hora del dia los datos, a fin de detectar patrones de comportamiento durante e
 
 El package no se encuentra disponible en CRAN, pero se puede instalar de la siguiente forma:
 
-```{r, eval=FALSE}
+
+```r
 library("devtools")
 install_github("thermosilla/tsfactors")
 ```
 
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
-```
+
